@@ -1,10 +1,8 @@
 <?php
 
-error_reporting(E_ALL);
-
 include_once 'datePars.php';
 
-require_once __DIR__.'./src/SimpleXLSX.php';
+require_once 'SimpleXLSX.php';
 
 if ($xlsx = SimpleXLSX::parse('data.xlsx')) {
     $header_values = $rows = [];
@@ -16,10 +14,6 @@ if ($xlsx = SimpleXLSX::parse('data.xlsx')) {
         $rows[] = array_combine($header_values, $r);
     }
 }
-echo "<pre>";
-print_r($rows);
-echo "</pre>";
-
 
 $rows = array_map(function (&$tag) {
     return array(
@@ -70,11 +64,7 @@ for ($i=0; $i < count($sortArr); $i++) {
 unset($rows);
 unset($sortArr);
 
-
-echo "<pre>";
-print_r(json_encode($levelOne));
-echo "</pre>";
-
-// $rows[$i]['Длительность'] = trim($rows[$i]['Длительность']) ;
-// $rows[$i]['Длительность'] = trim($rows[$i]['Длительность'], "дней?") ;
-// $rows[$i]['Длительность'] = str_ireplace(",", ".", $rows[$i]['Длительность']);
+$json = json_encode($sortArr);
+$file = fopen('sortArr.json', 'w+');
+fwrite($file, $json);
+fclose($file);
