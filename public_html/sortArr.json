@@ -1,0 +1,26 @@
+[
+    {
+        "level": "1",
+        "name": "\u0417\u041f\u041f \u0413\u043e\u0440\u043e\u0434\u0435\u0446\u043a\u0430\u044f_220",
+        "fromDate": 1612504800000,
+        "toDate": 1660662000000,
+        "leader": "",
+        "parent": "",
+        "percent": 1,
+        "cost": 11140828.970000001,
+        "actualCost": 148896.35999999999,
+        "url": "http:\/\/kruerf.com\/zpp-gorodetskaya-220"
+    },
+    {
+        "level": "1",
+        "name": "\u0413\u041f\u0423 1500 \u0413\u0440\u0438\u043d\u0422\u0435\u0445\u042d\u043d\u0435\u0440\u0434\u0436\u0438",
+        "fromDate": 1611554400000,
+        "toDate": 1660662000000,
+        "leader": "",
+        "parent": "",
+        "percent": 10,
+        "cost": 2474396.7599999998,
+        "actualCost": 218853.06,
+        "url": "http:\/\/kruerf.com\/gpu-1500-grintekhenerdzhi"
+    }
+]
